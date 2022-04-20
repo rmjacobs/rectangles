@@ -58,7 +58,7 @@ public class Rectangle {
      */
     public List<Point> intersectingPoints(Rectangle r2) {
         List<Point> points = new ArrayList<>();
-        if(this == null || r2 == null) {
+        if(r2 == null) {
             return points;
         }
         if(this.intersectsWith(r2)){
@@ -99,7 +99,7 @@ public class Rectangle {
         Given two rectangles, return their adjacency type. If they are not adjacent, type is none.
      */
     public Adjacency getAdjacency(Rectangle r2) {
-        if(this == null || r2 == null) {
+        if(r2 == null) {
             return Adjacency.NONE;
         }
 
