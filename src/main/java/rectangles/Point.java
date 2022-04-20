@@ -21,6 +21,7 @@ public class Point {
     public int getY() {
         return Y;
     }
+
     @Override
     public boolean equals(Object o) {
         if(this ==o ) {
@@ -34,5 +35,12 @@ public class Point {
         }
         Point p = (Point) o;
         return Objects.equals(X, p.X) && Objects.equals(Y, p.Y);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = X;
+        result = 31 * result + Y;
+        return result;
     }
 }
