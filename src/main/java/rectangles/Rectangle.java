@@ -126,7 +126,7 @@ public class Rectangle {
         return Adjacency.NONE;
     }
 
-    private static List<Point> getIntersectingPointsOnBottom(Rectangle r1, Rectangle r2) {
+    private List<Point> getIntersectingPointsOnBottom(Rectangle r1, Rectangle r2) {
         List<Point> points = new ArrayList<>();
 
         if(r1.intersectsWith(r2) &&
@@ -147,7 +147,7 @@ public class Rectangle {
         return points;
     }
 
-    private static List<Point> getIntersectingPointsOnTop(Rectangle r1, Rectangle r2) {
+    private List<Point> getIntersectingPointsOnTop(Rectangle r1, Rectangle r2) {
         List<Point> points = new ArrayList<>();
 
         if(r1.intersectsWith(r2) &&
@@ -168,7 +168,7 @@ public class Rectangle {
         return points;
     }
 
-    private static List<Point> getIntersectingPointsOnRight(Rectangle r1, Rectangle r2) {
+    private List<Point> getIntersectingPointsOnRight(Rectangle r1, Rectangle r2) {
         List<Point> points = new ArrayList<>();
 
         if(r1.intersectsWith(r2) &&
@@ -189,7 +189,7 @@ public class Rectangle {
         return points;
     }
 
-    private static List<Point> getIntersectingPointsOnLeft(Rectangle r1, Rectangle r2) {
+    private List<Point> getIntersectingPointsOnLeft(Rectangle r1, Rectangle r2) {
         List<Point> points = new ArrayList<>();
 
         if(r1.intersectsWith(r2) &&
